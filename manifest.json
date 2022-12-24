@@ -1,0 +1,35 @@
+{
+    "description": "format twi article",
+    "manifest_version": 2,
+    "name": "twi-formater",
+    "version": "1.4",
+    "icons": {
+      "16": "icons/icons8-format-16.png",
+      "32": "icons/icons8-format-32.png"
+    },
+
+    "permissions": [
+      "cookies",
+      "*://wanderinginn.com/*"
+  ],
+    
+    "browser_action": {
+      "default_icon": "icons/icons8-format-32.png",
+      "default_title": "twi-formater",
+      "default_popup": "popup/popup.html"
+    },
+  
+    "background": {
+      "scripts": [
+          "twiformatter.js"
+      ]
+    },
+
+    "content_scripts": [
+      {
+        "matches": ["*://wanderinginn.com/*"],
+        "js": ["content_scripts/updateformat.js"]
+      }
+    ]
+  
+  }

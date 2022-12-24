@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="popup.css" />
+    </head>
+
+    <body>
+        <div id="font-picker">
+            <img src="img/icons8-format-24.png"/>
+            <input type="range" id="fontScaling" name="fontScaling" min="0" max="300" value="100" step="1">
+            <input type="text" id="fontColor" name="fontColor" value="" placeholder="text color">
+        </div>
+        <div id="br-picker">
+            <img src="img/icons8-margin-24.png"/>
+            <input type="range" id="widthScaling" name="widthScaling" min="0" max="100" value="50" step="1">
+            <input type="text" id="bgColor" name="bgColor" value="" placeholder="page color">
+        </div>
+        <div id="reset-style">
+            <button type="reset">Reset</button>
+        </div>
+        <script src="popup.js"></script>
+    </body>
+ 
+</html>
